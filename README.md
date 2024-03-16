@@ -1,13 +1,15 @@
-# js-lab-58
-### Lab58 Object: HR System
-- ให้รับข้อมูลเป็นชื่อพนักงาน
-- หากมีพนักงานที่ชื่อตรงกับคีย์ในอ็อบเจ็คด้านล่างให้แสดงข้อความว่า Name: john, salary: 1000, address: Ratchathewi, Bangkok หากไม่มีชื่อแสดงข้อความว่า Not Found
+# js-lab-59
+### Lab59 Object: Guess Result1
+บรรทัดที่มี * ให้ผลลัพธ์เป็นอะไร เพราะอะไร
 
 ```JavaScript
-const employees = {
-  john: { salary: 1000, address: { district: 'Ratchathewi', province: 'Bangkok' } },
-  peter: { salary: 1500, address: { district: 'Pathumwan', province: 'Bangkok' } },
-  mike: { salary: 800, address: { district: 'Pakkret', province: 'Nonthaburi' } },
-  sarah: { salary: 2200, address: { district: 'Sriraja', province: 'Chonburi' } }
-};
+const product1 = { name: 'Coke', price: 18, size: '500mL' };
+
+const product2 = product1;
+product2.name = 'Pepsi';
+product2.price = 19;
+
+console.log(product1); // *
+console.log(product2); // **
+console.log(product1 === product2); // ***
 ```
